@@ -59,5 +59,10 @@ def calculate(operationname):
     calculation = {'first': first, 'second': second, 'operation': operation, 'result' : result}
     return render_template('result.html', title=page_title, calculation=calculation)
 
+@app.route("/result/error")
+def error():
+    """Handle error."""
+    return render_template('error.html')
+
 if __name__ == "__main__":
 	app.run()
