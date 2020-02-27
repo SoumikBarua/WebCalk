@@ -16,6 +16,7 @@ counter = -1
 def index():
     global first, second, operation, counter
     counter += 1
+    """Set up index front page."""
     
     form = SubmissionForm()
     print(str(form.validate_on_submit()))
@@ -38,6 +39,8 @@ def index():
 @app.route("/result/<operationname>")
 def calculate(operationname):
     global first, second, operation
+    """Perform calculations."""
+
     result = None
     page_title = None
     if operation == 'addition':

@@ -1,3 +1,25 @@
 ul {
 	list-style-type: none; 
 	padding-left: 0; }
+
+.header {
+	margin: 0 auto;
+	text-align: center;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #4285F4;
+	width: 50%;
+}
+.center{
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}
+
+body{
+	font-size:1.0em;
+	line-height:1.6;
+	font-weight:200;
+	font-family:Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#222
+}
