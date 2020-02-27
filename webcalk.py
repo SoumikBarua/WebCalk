@@ -64,5 +64,23 @@ def error():
     """Handle error."""
     return render_template('error.html')
 
+@app.errorhandler(404)
+def not_found_error(error):
+    global counter
+    coun
+    return render_template('404.html'), 400
+
+@app.errorhandler(500)
+def internal_error(error):
+    global counter
+    counter = -1
+    return render_template('500.html'), 500
+
+@app.errorhandler(403)
+def internal_error(error):
+    global counter
+    counter = -1
+    return render_template('403.html'), 403
+
 if __name__ == "__main__":
 	app.run()
